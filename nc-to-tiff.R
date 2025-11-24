@@ -1,9 +1,11 @@
+# R version: version.string R version 4.5.1 (2025-06-13 ucrt)
+version$version.string
 # Instalar los paquetes necesarios (si no están instalados)
-if (!require("rgdal")) install.packages("rgdal", dependencies = TRUE)
+if (!require("rgdax")) install.packages("rgdal", dependencies = TRUE)
 if (!require("ncdf4")) install.packages("ncdf4", dependencies = TRUE)
 if (!require("raster")) install.packages("raster", dependencies = TRUE)
 
-library(rgdal)
+library(rgdax)
 library(ncdf4)
 library(raster)
 
