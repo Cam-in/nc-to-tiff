@@ -66,3 +66,7 @@ tiff_files <- list.files(folder_path, pattern = "\\.tiff$", full.names = TRUE)
 r_stack <- rast(tiff_files)
 plot(r_stack)
 
+#loop plot single tiff
+for (f in tiff_files) {r <- rast(f)
+  plot(r, main = basename(f))
+} #plot
