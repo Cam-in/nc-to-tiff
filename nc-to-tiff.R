@@ -57,3 +57,12 @@ folder_path <- "D:/BASE/environmental_layers"
 
 # Ejecutar la conversión
 process_nc_files(folder_path)
+
+# Ejecutar la conversión
+process_nc_files(folder_path)
+
+#Plot tiff files
+tiff_files <- list.files(folder_path, pattern = "\\.tiff$", full.names = TRUE)
+r_stack <- rast(tiff_files)
+plot(r_stack)
+
